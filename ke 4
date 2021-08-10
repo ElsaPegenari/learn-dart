@@ -1,0 +1,84 @@
+"code fungsi 1"
+
+import 'dart:io';
+
+double luas segiempat(double panjang, double lebar) {
+  double hasil;
+  hasil = panjang * lebar;
+  return hasil;
+  
+ }
+main(List<String> arguments) {
+ double p, l, luas;
+ 
+ p = double.tryPerse(stdin.realLineSync());
+ l = double.tryPerse(stdin.realLineSync());
+ 
+ luas = luas_segiempat(p, l);
+ 
+ print(luas);
+ }
+ 
+ output
+ 4
+ 4
+ 16.0
+ 
+ 
+ 
+"code fungsi 1 tanpa pengembalian"
+import 'dart:io';
+
+double luas segiempat(double panjang, double lebar) {
+  double hasil;
+  hasil = panjang * lebar;
+  return hasil;
+  
+ }
+ 
+void sapa_penonton()
+print ("Halo penonton semua!");
+}
+main(List<String> arguments) {
+
+sapa_penonton();
+}
+
+output
+Halo penonton semua!
+
+
+
+"code 3 default null"
+import 'dart:io';
+
+String say(String from, String message, {String to, String appName}){
+  return from + " say " + massage + ((to != null) ? " to " + to : "") + ((appName != null) ?
+  " via " +appName : "");
+  }
+  
+  String say2(String from, String message, [String to, String appName]){
+  return from + " say " + massage + ((to != null) ? " to " + to : "") + ((appName != null) ?
+  " via " +appName : "");
+  }
+  
+ main(List<String> arguments) {
+   print(say(Elsa", "Hai", to: "Doloris", appName: "whatsapp"));
+   print2(say(Elsa", "Hai","Doloris"));
+   
+  }
+  
+  
+  output
+  Elsa say Hai to Doloris via whatsapp
+  Elsa say Hello to Doloris
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
