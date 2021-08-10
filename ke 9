@@ -1,0 +1,24 @@
+Code 1
+import 'package:belajar_inherit/monster.dart';
+import 'package:be;ajar_inherit/monster_kecoa.dart';
+import 'package:belajar_inherit/monster_ubur_ubur.dart';
+
+main(List<String> arguments) async {
+  List<Monster> monsters = [];
+
+  monsters.add(MonsterUburUbur());
+  monsters.add(MonsterKecoa());
+  monsters.add(MonsterUcoa());
+
+  for ( Monster m in monsters){
+    if (m is FlyingMonster) {
+      print(m as FlyingMonster).fly();
+    }
+  }
+  
+}
+
+output:
+Syuuung...
+Terbang terbang melayang 
+
