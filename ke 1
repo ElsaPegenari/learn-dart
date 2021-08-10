@@ -1,6 +1,41 @@
+Code 1 Hello World
+
+void main(List<String> arguments) {
+  print('Hello World');
+}
+
+output : 
+Hello World
+
+
+code 2
+
 import 'dart:io';
 
 void main(List<String> arguments) {
   String? input = stdin.readLineSync();
   print(input);
 }
+
+output
+malas
+malas
+
+
+code 3 kalkulator 
+
+import 'dart:io';
+
+main(List<String> arguments) {
+  String input = stdin.readLineSync();
+  double number = double.tryParse(input);
+  print(number + 10);
+}
+
+output : 
+10
+20
+
+
+
+
